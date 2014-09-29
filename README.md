@@ -1,4 +1,4 @@
-zebra-base
+zebracss-base
 ==========
 
 ZebraCSS Base Styles
