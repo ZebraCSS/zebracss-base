@@ -5,6 +5,7 @@
 @base-color-linkHovered: @base-color-link;
 @base-textDecoration-link: none;
 @base-textDecoration-linkHover: underline;
+@base-boxSizing: border-box;
 
 /**
  * A thin layer on top of normalize.css that provides a starting point more
@@ -13,9 +14,16 @@
  */
 
 html {
+	box-sizing: @base-boxSizing;
 	background: @base-background;
 	color: @base-color;
 	font: @base-font;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
 a {
