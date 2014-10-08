@@ -1,8 +1,10 @@
 @base-background: inherit;
 @base-color: inherit;
 @base-font: 16px sans-serif;
-@base-link-color: #069;
-@base-link-color-hover: @base-link-color;
+@base-color-link: #069;
+@base-color-linkHovered: @base-color-link;
+@base-textDecoration-link: none;
+@base-textDecoration-linkHover: underline;
 
 /**
  * A thin layer on top of normalize.css that provides a starting point more
@@ -17,15 +19,15 @@ html {
 }
 
 a {
-	color: @base-link-color;
-	text-decoration: none;
+	color: @base-color-link;
+	text-decoration: @base-textDecoration-link;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: @base-link-color-hover;
-	text-decoration: underline;
+	color: @base-color-linkHovered;
+	text-decoration: @base-textDecoration-linkHover;
 }
 
 blockquote,
