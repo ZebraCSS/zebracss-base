@@ -1,0 +1,17 @@
+@import "../lib/color";
+@import "../lib/background";
+@import "../lib/box-sizing";
+@import "../lib/typography";
+
+html {
+	box-sizing: @base-boxSizing;
+	background: @base-background;
+	color: @base-color;
+	font: @base-font;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}

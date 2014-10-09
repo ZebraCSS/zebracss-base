@@ -1,0 +1,47 @@
+/**
+ * Font family
+ */
+@base-fontFamily--sans: sans-serif;
+@base-fontFamily: @base-fontFamily--sans;
+
+/**
+ * Font size
+ */
+@base-fontSize--micro: 6px;
+@base-fontSize--smallest: 8px;
+@base-fontSize--smaller: 10px;
+@base-fontSize--small: 12px;
+@base-fontSize: 14px;
+@base-fontSize--large: 16px;
+@base-fontSize--larger: 18px;
+@base-fontSize--largest: 20px;
+@base-fontSize--jumbo: 32px;
+
+/**
+ * Line height
+ */
+@base-lineHeight--micro: 6px;
+@base-lineHeight--smallest: 8px;
+@base-lineHeight--smaller: 10px;
+@base-lineHeight--small: 12px;
+@base-lineHeight: 14px;
+@base-lineHeight--large: 16px;
+@base-lineHeight--larger: 18px;
+@base-lineHeight--largest: 20px;
+@base-lineHeight--jumbo: 32px;
+
+/**
+ * Base font
+ */
+@base-font: @base-fontSize @base-fontFamily;
+
+/**
+ * Mixin font
+ */
+.mixin-base-font (
+	@fontSize: @base-fontSize,
+	@lineHeight: @base-lineHeight,
+	@fontFamily: @base-fontFamily) {
+
+	font: @fontSize/@lineHeight @fontFamily;
+}
