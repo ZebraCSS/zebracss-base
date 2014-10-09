@@ -2,6 +2,7 @@
 	"exclude": [
 		".idea/**",
 		".git/**",
+		"build/**",
 		"node_modules/**"
 	],
 	"remove-empty-rulesets": true,
