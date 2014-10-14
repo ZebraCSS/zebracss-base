@@ -31,9 +31,6 @@
 		"url": "https://github.com/ZebraCSS/zebracss-base/issues"
 	},
 	"homepage": "https://github.com/ZebraCSS/zebracss-base",
-	"dependencies": {
-		"normalize.css": "^3.0.2"
-	},
 	"devDependencies": {
 		"gulp": "^3.8.8",
 		"gulp-csscomb": "^3.0.3",
